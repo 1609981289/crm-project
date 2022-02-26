@@ -9,10 +9,10 @@
     </settings>
     <typeAliases>
         <!--别名-->
-        <package name="com.xie.crm.model"/>
+        <package name="com.bjpowernode.crm.model"/>
     </typeAliases>
     <mappers>
         <!--sql语句xml文件映射-->
-        <package name="com.xie.crm.mapper"/>
+        <package name="com.bjpowernode.crm.mapper"/>
     </mappers>
 </configuration>

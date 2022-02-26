@@ -22,7 +22,7 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--内部使用getMapper 获取实现类 value中填要获取实现类的包-->
-        <property name="basePackage" value="com.xie.crm.bean"/>
+        <property name="basePackage" value="com.bjpowernode.crm.settings.mapper"/>
     </bean>
 
     <!--配置事务管理器-->
@@ -32,7 +32,7 @@
 
     <!--配置事务-->
     <aop:config>
-        <aop:pointcut id="allMethodPointcut" expression="execution(* com.xie.crm..service.*.*(..))"/>
+        <aop:pointcut id="allMethodPointcut" expression="execution(* com.bjpowernode.crm..service.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="allMethodPointcut"/>
     </aop:config>
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
